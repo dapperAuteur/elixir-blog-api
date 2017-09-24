@@ -12,24 +12,40 @@
 
 alias ElixirBlog.Repo
 alias ElixirBlog.Post
+alias ElixirBlog.Author
+
+# [
+#   %Post{
+#     title: "Why do I like Elixir",
+#     image: "https://avatars0.githubusercontent.com/u/1481354?v=4&s=400",
+#     body: "I like Elixir a lot",
+#     likes: 5,
+#     author: "aweful",
+#     category: "software development",
+#     sub_category: "elixir"
+#   },
+#   %Post{
+#     title: "Why do I like Vue.JS",
+#     image: "http://pespantelis.github.io/vue-videobg/demo/assets/logo.png",
+#     body: "I like Vue.JS a lot",
+#     likes: 7,
+#     author: "aweful",
+#     category: "software development",
+#     sub_category: "vuejs"
+#   }
+# ]
 
 [
-  %Post{
-    title: "Why do I like Elixir",
+  %Author{
+    username: "aweful",
     image: "https://avatars0.githubusercontent.com/u/1481354?v=4&s=400",
-    body: "I like Elixir a lot",
-    likes: 5,
-    author: "aweful",
-    category: "software development",
-    sub_category: "elixir"
+    password: "password",
+    email: "aweful@awews.com"
   },
-  %Post{
-    title: "Why do I like Vue.JS",
+  %Author{
+    username: "dapperAuteur",
     image: "http://pespantelis.github.io/vue-videobg/demo/assets/logo.png",
-    body: "I like Vue.JS a lot",
-    likes: 7,
-    author: "aweful",
-    category: "software development",
-    sub_category: "vuejs"
+    password: "string",
+    email: "d_a@awews.com"
   }
 ] |> Enum.each(&Repo.insert!(&1))

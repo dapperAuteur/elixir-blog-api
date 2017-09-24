@@ -8,5 +8,6 @@ defmodule ElixirBlog.Router do
   scope "/api", ElixirBlog do
     pipe_through :api
     resources "/posts", PostController, except: [:new, :edit]
+    resources "/authors", AuthorController, except: [:new, :edit]
   end
 end
