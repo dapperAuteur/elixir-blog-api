@@ -36,6 +36,7 @@ defmodule ElixirBlog.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:gettext, "~> 0.11"},
      {:ja_serializer, "~> 0.12.0"},
+     {:cors_plug, "~> 1.4"},
      {:cowboy, "~> 1.0"}]
   end
 
