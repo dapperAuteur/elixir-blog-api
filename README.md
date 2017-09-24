@@ -17,4 +17,6 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+  * Resources: https://www.youtube.com/watch?v=GtohBWjWRZg&t=936s
+  ** This project used the Programming With Erik video as a guide and starting point.
 # elixir-blog-api
