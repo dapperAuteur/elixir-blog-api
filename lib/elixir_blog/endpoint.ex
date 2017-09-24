@@ -36,5 +36,6 @@ defmodule ElixirBlog.Endpoint do
     key: "_elixir_blog_key",
     signing_salt: "+mE8vJw7"
 
+  plug CORSPlug
   plug ElixirBlog.Router
 end
